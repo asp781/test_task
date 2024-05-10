@@ -34,7 +34,7 @@ class FinHelper:
 
     @classmethod
     def is_exists(cls, id):
-        """Проверка за существование записи по заданному id."""
+        """Проверка существования записи по заданному id."""
         if os.path.exists(cls.DB):
             with open(cls.DB, encoding='utf-8') as file:
                 lines = file.readlines()
